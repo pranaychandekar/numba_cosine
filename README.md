@@ -1,4 +1,4 @@
-#Speed up Cosine Similarity computations with Numba
+# Speed up Cosine Similarity computations with Numba
 ---
 
 As a Machine Learning Engineer, I work a good amount of time on scaling the ML Algorithms. And on one fine day, I got introduced to Numba. This repository contains the jupyter-notebook and the results of my experiment with Numba.
@@ -6,12 +6,12 @@ As a Machine Learning Engineer, I work a good amount of time on scaling the ML A
 To get a better overview, I would recommend reading this [article](dummy).
 
 ----------
-###Experiment
+### Experiment
 ---
 To verify the difference in time taken to compute cosine similarity between two numpy arrays with and without Numba.
 
 ----------
-###Code
+### Code
 ---
 ``` python
 def cosine_similarity(u:np.ndarray, v:np.ndarray):
@@ -55,7 +55,7 @@ def cosine_similarity_numba(u:np.ndarray, v:np.ndarray):
 
 
 ----------
-###Results
+### Results
 ---
 
 |No. of computations|Without Numba | With Numba
@@ -70,14 +70,14 @@ def cosine_similarity_numba(u:np.ndarray, v:np.ndarray):
 The vectors we used for the above computations are of 50 dimensions.
 
 ----------
-###Conclusion
+### Conclusion
 ---
 There is a significant decrease in computation time when we compile the python function with Numba.
 
 In this experiment, we just scratched the surface. There is lot more you can do with numba using other decorators and the parameters. I will leave you all to explore that by yourselves.
 
 ----------
-###Author
+### Author
 ---
 [Pranay Chandekar](https://in.linkedin.com/in/pranaychandekar)
 
